@@ -1,16 +1,12 @@
 #!/bin/bash
 set -e
 
-MESSAGE=${1:-"Deploy site update"}
+MESSAGE=${1:-"Deploy update"}
 ROOT_DIR=$(pwd)
 
-echo "🧹 Cleaning build artifacts..."
-rm -rf .next out
-
-echo "🏗 Building site (includes static export)..."
+echo "🏗 Building site..."
 npm run build
 
-# --- Deploy to gh-pages ---
 echo "🚀 Deploying to GitHub Pages (gh-pages branch)..."
 cd out
 git init
@@ -20,9 +16,8 @@ git add -A
 git commit -m "$MESSAGE"
 git push origin gh-pages --force
 
-# --- Push main branch code ---
+echo "🔁 Committing main branch changes..."
 cd "$ROOT_DIR"
-echo "🔁 Committing code changes to main..."
 git add -A
 git commit -m "$MESSAGE" || echo "✅ No main changes to commit"
 git push origin main
