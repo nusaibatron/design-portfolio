@@ -47,17 +47,20 @@ export default function RootLayout({ children }) {
   </div>
 
   {/* Center: Nav */}
-  <nav style={{
-    width: "33.33%", // Middle 1/3 of the page
-    display: "flex",
-    justifyContent: "space-between", // Evenly distribute links
-    fontSize: "1.1rem",
-    fontWeight: 600,
-    color: "#fff",
-    textAlign: "center",
-    height: "100%",
-    alignItems: "center"
-  }}>
+  <nav
+    className={`nav-links nav-links--${isHome ? "3" : "4"}`}
+    style={{
+      width: isHome ? "100%" : "100%",
+      display: "flex",
+      justifyContent: "space-between",
+      fontSize: "1.1rem",
+      fontWeight: 600,
+      color: "#fff",
+      textAlign: "center",
+      height: "100%",
+      alignItems: "center"
+    }}
+  >
     <Link href="/projects" style={{ textDecoration: "none", color: "white", height: "100%", display: "flex", alignItems: "center" }}>Projects</Link>
     <Link href="/about" style={{ textDecoration: "none", color: "white", height: "100%", display: "flex", alignItems: "center" }}>About Me</Link>
     <Link href="/art" style={{ textDecoration: "none", color: "white", height: "100%", display: "flex", alignItems: "center" }}>Art</Link>
