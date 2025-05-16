@@ -2,7 +2,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <title>Nusaiba Stuff</title>
+        <title>Nusaiba | Portfolio </title>
+          <link rel="icon" href="/nusaiba.png" type="image/png" />
+
       </head>
       <body style={{
         margin: 0,
