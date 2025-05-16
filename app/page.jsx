@@ -36,7 +36,7 @@ export default function Home() {
           fontWeight: 700,
           marginBottom: "1rem",
         }}>
-          Hey I’m Nusaiba
+          Hey I'm Nusaiba
         </h1>
         <p style={{
           fontSize: "1.25rem",

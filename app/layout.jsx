@@ -19,42 +19,56 @@ export default function RootLayout({ children }) {
         backgroundColor: "#f9f9fb",
         color: "#0f0f0f",
       }}>
-        <header style={{
-          backgroundColor: "#0a1a30",
-          display: "flex",
-          alignItems: "center",
-          padding: "1rem 2rem",
-          boxShadow: "0 1px 4px rgba(0,0,0,0.05)",
-          position: "relative"
-        }}>
-          {/* Home icon on non-home pages */}
-          {!isHome && (
-            <Link href="/" style={{
-              position: "absolute",
-              left: "2rem",
-              color: "#fff",
-              fontSize: "1.5rem",
-              textDecoration: "none"
-            }}>
-              🏠
-            </Link>
-          )}
+<header
+  style={{
+    backgroundColor: "#0a1a30",
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
+    padding: "1rem 2rem",
+    flexWrap: "wrap",
+  }}
+>
+  <a
+    href="/"
+    style={{
+      fontSize: "1.5rem",
+      color: "white",
+      textDecoration: "none",
+      display: "flex",
+      alignItems: "center",
+      gap: "0.5rem",
+    }}
+  >
+    <span role="img" aria-label="home" style={{ fontSize: "1.2rem" }}>
+      🏠
+    </span>
+    <span className="hide-on-mobile">Home</span>
+  </a>
 
-          {/* Centered nav */}
-          <nav style={{
-            margin: "0 auto",
-            display: "flex",
-            gap: "5rem",
-            fontSize: "1.1rem",
-            fontWeight: 600,
-            color: "#fff",
-            textAlign: "center"
-          }}>
-            <Link href="/projects" style={{ textDecoration: "none", color: "white" }}>Projects</Link>
-            <Link href="/about" style={{ textDecoration: "none", color: "white" }}>About Me</Link>
-            <Link href="/art" style={{ textDecoration: "none", color: "white" }}>Art</Link>
-          </nav>
-        </header>
+  <nav
+    style={{
+      display: "flex",
+      justifyContent: "center",
+      flex: 1,
+      gap: "3rem",
+      fontSize: "1.1rem",
+      fontWeight: 600,
+      color: "#fff",
+    }}
+  >
+    <a href="/projects" style={{ color: "inherit", textDecoration: "none" }}>
+      Projects
+    </a>
+    <a href="/about" style={{ color: "inherit", textDecoration: "none" }}>
+      About Me
+    </a>
+    <a href="/art" style={{ color: "inherit", textDecoration: "none" }}>
+      Art
+    </a>
+  </nav>
+</header>
+
         {children}
       </body>
     </html>
