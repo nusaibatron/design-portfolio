@@ -5,3 +5,31 @@ body {
   color: black;
   font-family: sans-serif;
 }
+.top-nav {
+  background: #0a1a40; /* expensive navy blue */
+  padding: 1.25rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-inner {
+  width: 33.333%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-inner a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 1.125rem;
+  font-family: inherit;
+  letter-spacing: 0.5px;
+  transition: opacity 0.2s ease;
+}
+
+.nav-inner a:hover {
+  opacity: 0.75;
+}
