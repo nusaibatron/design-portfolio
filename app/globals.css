@@ -60,14 +60,17 @@ body::before {
 /* Mobile styles */
 @media (max-width: 700px) {
   .nav-links {
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
-    padding-top: 1rem;
-    gap: 1rem;
+    padding-top: 0;
+    gap: 0;
   }
 
   .nav-links a {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    width: 25%;
+    flex: 1 1 25%;
+    text-align: center;
   }
 
   header {
