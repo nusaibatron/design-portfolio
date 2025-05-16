@@ -72,14 +72,28 @@ body::before {
     text-align: center;
   }
 
-  .nav-links--4 a {
+  .nav-links--4 a, .nav-links--4 .nav-home-link-mobile {
     width: 25%;
     flex: 1 1 25%;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .nav-links a {
     font-size: 1.1rem;
+  }
+
+  .nav-home-link-desktop {
+    display: none !important;
+  }
+
+  .nav-home-link-mobile {
+    display: flex !important;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
   }
 
   header {
@@ -92,6 +106,16 @@ body::before {
     position: static;
     transform: none;
     margin-bottom: 0.5rem;
+  }
+}
+
+@media (min-width: 701px) {
+  .nav-home-link-mobile {
+    display: none !important;
+  }
+
+  .nav-home-link-desktop {
+    display: flex !important;
   }
 }
 

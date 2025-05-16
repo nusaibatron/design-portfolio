@@ -30,8 +30,8 @@ export default function RootLayout({ children }) {
   height: "64px", // Fixed height for navbar
   minHeight: "64px"
 }}>
-  {/* Left: Home icon */}
-  <div style={{ width: "25%", display: "flex", justifyContent: "flex-start", height: "100%", alignItems: "center" }}>
+  {/* Left: Home icon (desktop only) */}
+  <div className="nav-home-link-desktop" style={{ width: "25%", display: "flex", justifyContent: "flex-start", height: "100%", alignItems: "center" }}>
     {!isHome && (
       <Link href="/" style={{
         color: "#fff",
@@ -61,6 +61,23 @@ export default function RootLayout({ children }) {
       alignItems: "center"
     }}
   >
+    {/* Home icon as nav item on mobile only */}
+    <span className="nav-home-link-mobile">
+      {!isHome && (
+        <Link href="/" style={{
+          color: "#fff",
+          fontSize: "1.5rem",
+          textDecoration: "none",
+          height: "100%",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          width: "100%"
+        }}>
+          🏠
+        </Link>
+      )}
+    </span>
     <Link href="/projects" style={{ textDecoration: "none", color: "white", height: "100%", display: "flex", alignItems: "center" }}>Projects</Link>
     <Link href="/about" style={{ textDecoration: "none", color: "white", height: "100%", display: "flex", alignItems: "center" }}>About Me</Link>
     <Link href="/art" style={{ textDecoration: "none", color: "white", height: "100%", display: "flex", alignItems: "center" }}>Art</Link>
