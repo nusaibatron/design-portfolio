@@ -8,53 +8,60 @@ body {
 }
 
 body::before {
-  content: '';
+  content: "";
   position: fixed;
   top: 0;
   left: 0;
-  width: 200%;
-  height: 200%;
-  background: linear-gradient(-45deg, #88c9e8, #845ec2, #ffc75f, #ff6f91);
-  background-size: 400% 400%;
-  animation: backgroundShift 12s ease-in-out infinite;
+  width: 100vw;
+  height: 100vh;
   z-index: -1;
-  opacity: 0.7;
-  pointer-events: none;
+  background: linear-gradient(270deg, #88c9e8, #ff80b5, #9089fc, #88c9e8);
+  background-size: 400% 400%;
+  animation: gradientShift 300s ease-in-out infinite;
+  filter: blur(100px);
+  opacity: 0.6;
 }
 
-@keyframes backgroundShift {
+@keyframes gradientShift {
   0% {
     background-position: 0% 50%;
   }
-  25% {
-    background-position: 50% 100%;
-  }
   50% {
     background-position: 100% 50%;
-  }
-  75% {
-    background-position: 50% 0%;
   }
   100% {
     background-position: 0% 50%;
   }
 }
 
+.test-animated-rect {
+  background: rgba(200, 225, 255, 0.55);
+  backdrop-filter: blur(8px);
+  transition: background 1.5s cubic-bezier(0.4, 0.0, 0.2, 1);
+  border-radius: 24px;
+  opacity: 0.7;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.04);
+  /* border removed for subtle look */
+}
+
+@keyframes testColorShift {
+  0% { filter: hue-rotate(0deg); }
+  100% { filter: hue-rotate(360deg); }
+}
 
 .nav-links {
-  display: flex;
-  justify-content: space-between;
-  width: 33%;
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: #fff;
-  text-align: center;
+
 }
 
 .nav-links a {
-  text-decoration: none;
-  color: white;
-  flex: 1;
+
+}
+
+/* Remove absolute positioning and auto margins for all nav links */
+.nav-links a:nth-child(2),
+.nav-links a:first-child,
+.nav-links a:last-child {
+
 }
 
 /* Mobile styles */
@@ -90,10 +97,7 @@ body::before {
   }
 
   .nav-home-link-mobile {
-    display: flex !important;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
+
   }
 
   header {
@@ -106,6 +110,11 @@ body::before {
     position: static;
     transform: none;
     margin-bottom: 0.5rem;
+  }
+
+  .test-animated-rect {
+    width: 80vw; /* Ensure rectangle is 80% of the viewport width */
+    margin: 0 auto; /* Center horizontally */
   }
 }
 
