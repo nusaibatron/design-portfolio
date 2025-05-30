@@ -70,7 +70,6 @@ export default function RootLayout({ children }) {
           <nav
             className={`nav-links nav-links--${isHome ? "3" : "4"}`}
             style={{
-              width: "33%", // Middle 1/3 of the navbar
               display: "flex",
               justifyContent: "space-between",
               fontSize: "1.1rem",
@@ -102,9 +101,9 @@ export default function RootLayout({ children }) {
                 </Link>
               </span>
             )}
-            <Link href="/projects" style={{ textDecoration: "none", color: "white", height: "100%", display: "flex", alignItems: "center", fontSize: ".75rem" }}>Projects</Link>
-            <Link href="/about" style={{ textDecoration: "none", color: "white", height: "100%", display: "flex", alignItems: "center", fontSize: ".75rem" }}>About Me</Link>
-            <Link href="/art" style={{ textDecoration: "none", color: "white", height: "100%", display: "flex", alignItems: "center", fontSize: ".75rem" }}>Art</Link>
+            <Link href="/projects" style={{ textDecoration: "none", color: "white", height: "100%", display: "flex", alignItems: "center", fontSize: ".75rem", padding: "0.5rem 1rem" }}>  Projects  </Link>
+            <Link href="/about" style={{ textDecoration: "none", color: "white", height: "100%", display: "flex", alignItems: "center", fontSize: ".75rem", padding: "0.5rem 1rem" }}>  About  </Link>
+            <Link href="/art" style={{ textDecoration: "none", color: "white", height: "100%", display: "flex", alignItems: "center", fontSize: ".75rem", padding: "0.5rem 1rem" }}>  Art  </Link>
           </nav>
 
           {/* Desktop: Right placeholder */}
