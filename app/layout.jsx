@@ -26,7 +26,9 @@ export default function RootLayout({ children }) {
       <body style={{
         margin: 0,
         fontFamily: "Inter, system-ui, -apple-system, sans-serif",
-        background: "none",
+        background: "linear-gradient(270deg, #88c9e8, #ff80b5, #9089fc, #88c9e8)",
+        backgroundSize: "200% 200%",
+        animation: "gradientShift 30s ease-in-out infinite",
         color: "#0f0f0f",
         minHeight: "100vh",
         boxSizing: "border-box",
