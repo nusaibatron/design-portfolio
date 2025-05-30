@@ -41,8 +41,8 @@ export default function ProjectsPage() {
           textAlign: "center",
           fontWeight: 600,
           fontSize: "0.85rem", // Reduced font size
-          color: "#fff", // White text color
-          width: "90%", // Reduce width by 10%
+          color: "#111",
+          width: "50%", // Reduce width by 10%
           height: "30px", // Reduced height to one-third of original
           margin: "0 auto", // Center horizontally
         }}
@@ -74,8 +74,8 @@ export default function ProjectsPage() {
           textAlign: "center",
           fontWeight: 600,
           fontSize: "0.85rem", // Reduced font size
-          color: "#fff", // White text color
-          width: "90%", // Reduce width by 10%
+          color: "#111",
+          width: "50%", // Reduce width by 10%
           height: "30px", // Reduced height to one-third of original
           margin: "0 auto", // Center horizontally
         }}
@@ -107,8 +107,8 @@ export default function ProjectsPage() {
           textAlign: "center",
           fontWeight: 600,
           fontSize: "0.85rem", // Reduced font size
-          color: "#fff", // White text color
-          width: "90%", // Reduce width by 10%
+          color: "#111",
+          width: "50%", // Reduce width by 10%
           height: "30px", // Reduced height to one-third of original
           margin: "0 auto", // Center horizontally
         }}
