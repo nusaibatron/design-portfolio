@@ -16,10 +16,9 @@ body::before {
   height: 100vh;
   z-index: -1;
   background: linear-gradient(270deg, #88c9e8, #ff80b5, #9089fc, #88c9e8);
-  background-size: 400% 400%;
-  animation: gradientShift 300s ease-in-out infinite;
-  filter: blur(100px);
-  opacity: 0.6;
+  background-size: 200% 200%; /* Simplified gradient size */
+  animation: gradientShift 30s ease-in-out infinite; /* Reduced animation duration */
+  opacity: 0.8; /* Removed blur for compatibility */
 }
 
 @keyframes gradientShift {
@@ -47,21 +46,6 @@ body::before {
 @keyframes testColorShift {
   0% { filter: hue-rotate(0deg); }
   100% { filter: hue-rotate(360deg); }
-}
-
-.nav-links {
-
-}
-
-.nav-links a {
-
-}
-
-/* Remove absolute positioning and auto margins for all nav links */
-.nav-links a:nth-child(2),
-.nav-links a:first-child,
-.nav-links a:last-child {
-
 }
 
 /* Mobile styles */
