@@ -104,8 +104,9 @@ export default function RootLayout({ children }) {
               </span>
             )}
             <Link href="/projects" style={{ textDecoration: "none", color: "white", height: "100%", display: "flex", alignItems: "center", fontSize: ".75rem", padding: "0.5rem 1rem" }}>  Projects  </Link>
-            <Link href="/about" style={{ textDecoration: "none", color: "white", height: "100%", display: "flex", alignItems: "center", fontSize: ".75rem", padding: "0.5rem 1rem" }}>  About  </Link>
             <Link href="/art" style={{ textDecoration: "none", color: "white", height: "100%", display: "flex", alignItems: "center", fontSize: ".75rem", padding: "0.5rem 1rem" }}>  Art  </Link>
+                        <Link href="/about" style={{ textDecoration: "none", color: "white", height: "100%", display: "flex", alignItems: "center", fontSize: ".75rem", padding: "0.5rem 1rem" }}>  About  </Link>
+
           </nav>
 
           {/* Desktop: Right placeholder */}
