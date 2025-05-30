@@ -1,11 +1,31 @@
+"use client";
+
+import { useEffect, useState } from "react";
+
 export default function ProjectsPage() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    handleResize(); // Set initial state
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const containerStyle = isMobile
+    ? { display: "flex", flexDirection: "column", gap: "2rem" }
+    : { display: "grid", gridTemplateColumns: "1fr 1fr", gridTemplateRows: "repeat(3, auto)", gap: "4rem" };
+
   return (
     <div
       style={{
-        display: "grid",
-        gridTemplateColumns: "1fr 1fr", // Two columns
-        gridTemplateRows: "repeat(3, auto)", // Three rows
-        gap: "4rem", // Add more spacing between items
+        ...containerStyle,
         padding: "2rem",
         alignItems: "center",
       }}
