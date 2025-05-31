@@ -74,17 +74,17 @@ export default function ProjectsPage() {
           textAlign: "center",
           fontWeight: 600,
           fontSize: "0.85rem", // Reduced font size
-          color: "#111",
-          width: "50%", // Reduce width by 10%
+          color: "#fff", // White text color
+          width: "90%", // Reduce width by 10%
           height: "30px", // Reduced height to one-third of original
           margin: "0 auto", // Center horizontally
         }}
       >
-        Project 2
+        Versana Finance Status
       </div>
       <div
         style={{
-          backgroundImage: "url('/intuit.jpg')", // Replace placeholder with actual image
+          backgroundImage: "url('/versana.jpg')", // Replace placeholder with actual image
           backgroundSize: "100% 100%", // Stretch the image to completely fit the box
           backgroundPosition: "center", // Center the image
           borderRadius: "12px",
@@ -113,11 +113,45 @@ export default function ProjectsPage() {
           margin: "0 auto", // Center horizontally
         }}
       >
-        Project 3
+        Dots
       </div>
       <div
         style={{
-          backgroundImage: "url('/intuit.jpg')", // Replace placeholder with actual image
+          backgroundImage: "url('/dots.jpg')", // Replace video with image
+          backgroundSize: "100% 100%", // Stretch the image to completely fit the box
+          backgroundPosition: "center", // Center the image
+          borderRadius: "15px",
+          boxShadow: "1 8px 40px rgba(0,0,0,0.08)", // Add drop shadow
+          border: "2px solid rgba(200, 225, 255, 0.55)", // Add border to match Versana
+          width: "90%", // Reduce width of the image box by 10%
+          height: "300px", // Set height to better fit the image
+          aspectRatio: "16 / 9", // Maintain aspect ratio for better fit
+          margin: "0 auto", // Center horizontally
+        }}
+      />
+
+      {/* Project 4 */}
+      <div
+        style={{
+          background: "rgba(200, 225, 255, 0.55)",
+          backdropFilter: "blur(8px)",
+          borderRadius: "32px",
+          padding: "1.5rem",
+          boxShadow: "0 4px 24px rgba(0,0,0,0.08)",
+          textAlign: "center",
+          fontWeight: 600,
+          fontSize: "0.85rem", // Reduced font size
+          color: "#111",
+          width: "50%", // Reduce width by 10%
+          height: "30px", // Reduced height to one-third of original
+          margin: "0 auto", // Center horizontally
+        }}
+      >
+        Kiwi
+      </div>
+      <div
+        style={{
+          backgroundImage: "url('/kiwi.jpg')", // Add Kiwi image
           backgroundSize: "100% 100%", // Stretch the image to completely fit the box
           backgroundPosition: "center", // Center the image
           borderRadius: "12px",

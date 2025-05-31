@@ -47,7 +47,7 @@ export default function Home() {
           fontSize: "1.7rem", // bigger text
           fontWeight: 600,     // bolder
           margin: 0,
-          color: "#111",
+          color: "#222",
           textAlign: "center",
           lineHeight: 1.08,
           letterSpacing: "-0.5px",
@@ -59,12 +59,12 @@ export default function Home() {
       </div>
       <p style={{
         fontSize: ".8rem",
-        color: "#222",
+        color: "#fff",
         textAlign: "center",
         marginTop: "-1.2rem",
         marginBottom: 0
       }}>
-        This is where I link my stuff to show you. ✨
+        Designer in New York City merging tech & taste. ✨
       </p>
     </div>
   );
