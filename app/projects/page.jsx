@@ -7,7 +7,7 @@ export default function ProjectsPage() {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768);
+      setIsMobile(window.innerWidth <= 850);
     };
 
     handleResize(); // Set initial state
@@ -41,7 +41,7 @@ export default function ProjectsPage() {
           textAlign: "center",
           fontWeight: 600,
           fontSize: "0.85rem", // Reduced font size
-          color: "#111",
+          color: "#515151",
           width: "50%", // Reduce width by 10%
           height: "30px", // Reduced height to one-third of original
           margin: "0 auto", // Center horizontally
@@ -74,8 +74,9 @@ export default function ProjectsPage() {
           textAlign: "center",
           fontWeight: 600,
           fontSize: "0.85rem", // Reduced font size
-          color: "#fff", // White text color
-          width: "90%", // Reduce width by 10%
+                    color: "#515151",
+
+          width: "50%", // Reduce width by 10%
           height: "30px", // Reduced height to one-third of original
           margin: "0 auto", // Center horizontally
         }}
@@ -107,7 +108,7 @@ export default function ProjectsPage() {
           textAlign: "center",
           fontWeight: 600,
           fontSize: "0.85rem", // Reduced font size
-          color: "#111",
+          color: "#515151",
           width: "50%", // Reduce width by 10%
           height: "30px", // Reduced height to one-third of original
           margin: "0 auto", // Center horizontally
@@ -141,7 +142,7 @@ export default function ProjectsPage() {
           textAlign: "center",
           fontWeight: 600,
           fontSize: "0.85rem", // Reduced font size
-          color: "#111",
+          color: "#515151",
           width: "50%", // Reduce width by 10%
           height: "30px", // Reduced height to one-third of original
           margin: "0 auto", // Center horizontally
@@ -158,7 +159,7 @@ export default function ProjectsPage() {
           boxShadow: "0 4px 24px rgba(0,0,0,0.08)",
           width: "90%", // Reduce width of the image box by 10%
           height: "300px", // Set height to better fit the image
-          aspectRatio: "16 / 9", // Maintain aspect ratio for better fit
+          aspectRatio: "10 / 9", // Maintain aspect ratio for better fit
           margin: "0 auto", // Center horizontally
         }}
       />
