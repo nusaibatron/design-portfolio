@@ -7,7 +7,9 @@ export default function ProjectsPage() {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 850);
+          console.log("Window width:", window.innerWidth); // Log the current window width
+
+      setIsMobile(window.innerWidth <= 900);
     };
 
     handleResize(); // Set initial state
@@ -20,7 +22,7 @@ export default function ProjectsPage() {
 
   const containerStyle = isMobile
     ? { display: "flex", flexDirection: "column", gap: "2rem" }
-    : { display: "grid", gridTemplateColumns: "1fr 1fr", gridTemplateRows: "repeat(3, auto)", gap: "4rem" };
+     : { display: "grid", gridTemplateColumns: "1fr 1fr", gridTemplateRows: "repeat(2, auto)", gap: "4rem" };
 
   return (
     <div
@@ -47,7 +49,14 @@ export default function ProjectsPage() {
           margin: "0 auto", // Center horizontally
         }}
       >
-        Code Simple
+        <a
+  href="https://www.codesimpletech.com/"
+  target="_blank"
+  rel="noopener noreferrer"
+  style={{ textDecoration: "none", color: "inherit" }}
+>
+  CodeSimple
+</a>
         <div
           style={{
             fontSize: "0.75rem", // Smaller font size for subtext
@@ -88,16 +97,23 @@ As a founding team member from this Berkeley-based startup, I led design and dev
           justifyContent: "center",
         }}
       >
-        <div
-          style={{
-            backgroundImage: "url('/codesimple.jpg')", // Add Kiwi image
-            backgroundSize: "100% 100%", // Stretch the image to completely fit the box
-            backgroundPosition: "center", // Center the image
-            borderRadius: "8px", // Inner container rounded corners
-            width: "100%", // Fill the available space
-            height: "100%", // Fill the available space
-          }}
-        />
+        <a
+  href="https://www.codesimpletech.com/"
+  target="_blank"
+  rel="noopener noreferrer"
+  style={{ display: "block", width: "100%", height: "100%" }}
+>
+  <div
+    style={{
+      backgroundImage: "url('/codesimple.jpg')", // Add Kiwi image
+      backgroundSize: "100% 100%", // Stretch the image to completely fit the box
+      backgroundPosition: "center", // Center the image
+      borderRadius: "8px", // Inner container rounded corners
+      width: "100%", // Fill the available space
+      height: "100%", // Fill the available space
+    }}
+  />
+</a>
       </div>
       
       {/* Project Intuit */}
@@ -117,7 +133,14 @@ As a founding team member from this Berkeley-based startup, I led design and dev
           margin: "0 auto", // Center horizontally
         }}
       >
-        Intuit
+        <a
+  href="https://www.intuit.com/intuitassist/"
+  target="_blank"
+  rel="noopener noreferrer"
+  style={{ textDecoration: "none", color: "inherit" }}
+>
+  Intuit
+</a>
         <div
           style={{
             fontSize: "0.75rem", // Smaller font size for subtext
@@ -159,16 +182,23 @@ As a founding team member from this Berkeley-based startup, I led design and dev
           justifyContent: "center",
         }}
       >
-        <div
-          style={{
-            backgroundImage: "url('/intuit.jpg')", // Replace placeholder with actual image
-            backgroundSize: "100% 100%", // Stretch the image to completely fit the box
-            backgroundPosition: "center", // Center the image
-            borderRadius: "8px", // Inner container rounded corners
-            width: "100%", // Fill the available space
-            height: "100%", // Fill the available space
-          }}
-        />
+        <a
+  href="https://www.intuit.com/intuitassist/"
+  target="_blank"
+  rel="noopener noreferrer"
+  style={{ display: "block", width: "100%", height: "100%" }}
+>
+  <div
+    style={{
+      backgroundImage: "url('/intuit.jpg')", // Replace placeholder with actual image
+      backgroundSize: "100% 100%", // Stretch the image to completely fit the box
+      backgroundPosition: "center", // Center the image
+      borderRadius: "8px", // Inner container rounded corners
+      width: "100%", // Fill the available space
+      height: "100%", // Fill the available space
+    }}
+  />
+</a>
       </div>
 
       {/* Project Versana */}
@@ -188,7 +218,14 @@ As a founding team member from this Berkeley-based startup, I led design and dev
           margin: "0 auto", // Center horizontally
         }}
       >
-        Versana
+        <a
+  href="https://versana.io/"
+  target="_blank"
+  rel="noopener noreferrer"
+  style={{ textDecoration: "none", color: "inherit" }}
+>
+  Versana
+</a>
         <div
           style={{
             fontSize: "0.75rem", // Smaller font size for subtext
@@ -230,16 +267,23 @@ As a founding team member from this Berkeley-based startup, I led design and dev
           justifyContent: "center",
         }}
       >
-        <div
-          style={{
-            backgroundImage: "url('/versana.jpg')", // Replace placeholder with actual image
-            backgroundSize: "100% 100%", // Stretch the image to completely fit the box
-            backgroundPosition: "center", // Center the image
-            borderRadius: "8px", // Inner container rounded corners
-            width: "100%", // Fill the available space
-            height: "100%", // Fill the available space
-          }}
-        />
+        <a
+          href="https://versana.io/"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ display: "block", width: "100%", height: "100%" }}
+        >
+          <div
+            style={{
+              backgroundImage: "url('/versana.jpg')",
+              backgroundSize: "100% 100%",
+              backgroundPosition: "center",
+              borderRadius: "8px",
+              width: "100%",
+              height: "100%",
+            }}
+          />
+        </a>
       </div>
 
                               {/* Project GM */}
@@ -259,7 +303,14 @@ As a founding team member from this Berkeley-based startup, I led design and dev
           margin: "0 auto", // Center horizontally
         }}
       >
-        GM Finance
+        <a
+  href="https://www.gm.com/company/growth-strategy/artificial-intelligence"
+  target="_blank"
+  rel="noopener noreferrer"
+  style={{ textDecoration: "none", color: "inherit" }}
+>
+  GM Finance
+</a>
         <div
           style={{
             fontSize: "0.75rem", // Smaller font size for subtext
@@ -300,16 +351,23 @@ At GM, I built predictive features that used car data to help users make smarter
           justifyContent: "center",
         }}
       >
-        <div
-          style={{
-            backgroundImage: "url('/gm.jpg')", // Add Kiwi image
-            backgroundSize: "100% 100%", // Stretch the image to completely fit the box
-            backgroundPosition: "center", // Center the image
-            borderRadius: "8px", // Inner container rounded corners
-            width: "100%", // Fill the available space
-            height: "100%", // Fill the available space
-          }}
-        />
+        <a
+  href="https://www.gm.com/company/growth-strategy/artificial-intelligence"
+  target="_blank"
+  rel="noopener noreferrer"
+  style={{ display: "block", width: "100%", height: "100%" }}
+>
+  <div
+    style={{
+      backgroundImage: "url('/gm.jpg')",
+      backgroundSize: "100% 100%",
+      backgroundPosition: "center",
+      borderRadius: "8px",
+      width: "100%",
+      height: "100%",
+    }}
+  />
+</a>
       </div>
 
       {/* Project Dots */}
@@ -329,7 +387,14 @@ At GM, I built predictive features that used car data to help users make smarter
           margin: "0 auto", // Center horizontally
         }}
       >
-        Dots
+        <a
+  href="https://dots.dev/?gad_source=1&gbraid=0AAAAAogfWRKXyozZNuxF79wawBfIkSIwg&gclid=Cj0KCQjww-HABhCGARIsALLO6Xzym1fXE4vNMUQTXACkDSuU3Qqrko_zpWPzXQJkBgTBMUs4NV0VWmkaAimpEALw_wcB"
+  target="_blank"
+  rel="noopener noreferrer"
+  style={{ textDecoration: "none", color: "inherit" }}
+>
+  Dots
+</a>
         <div
           style={{
             fontSize: "0.75rem", // Smaller font size for subtext
@@ -372,16 +437,23 @@ At GM, I built predictive features that used car data to help users make smarter
           justifyContent: "center",
         }}
       >
-        <div
-          style={{
-            backgroundImage: "url('/dots.jpg')", // Replace video with image
-            backgroundSize: "100% 100%", // Stretch the image to completely fit the box
-            backgroundPosition: "center", // Center the image
-            borderRadius: "8px", // Inner container rounded corners
-            width: "100%", // Fill the available space
-            height: "100%", // Fill the available space
-          }}
-        />
+        <a
+  href="https://dots.dev/?gad_source=1&gbraid=0AAAAAogfWRKXyozZNuxF79wawBfIkSIwg&gclid=Cj0KCQjww-HABhCGARIsALLO6Xzym1fXE4vNMUQTXACkDSuU3Qqrko_zpWPzXQJkBgTBMUs4NV0VWmkaAimpEALw_wcB"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ display: "block", width: "100%", height: "100%" }}
+        >
+          <div
+            style={{
+              backgroundImage: "url('/dots.jpg')",
+              backgroundSize: "100% 100%",
+              backgroundPosition: "center",
+              borderRadius: "8px",
+              width: "100%",
+              height: "100%",
+            }}
+          />
+        </a>
       </div>
 
 
@@ -402,7 +474,14 @@ At GM, I built predictive features that used car data to help users make smarter
           margin: "0 auto", // Center horizontally
         }}
       >
-        Haven Tech
+        <a
+  href="https://www.linkedin.com/company/haven-tech-us/posts/?feedView=all"
+  target="_blank"
+  rel="noopener noreferrer"
+  style={{ textDecoration: "none", color: "inherit" }}
+>
+  Haven Tech
+</a>
         <div
           style={{
             fontSize: "0.75rem", // Smaller font size for subtext
@@ -443,16 +522,23 @@ At GM, I built predictive features that used car data to help users make smarter
           justifyContent: "center",
         }}
       >
-        <div
-          style={{
-            backgroundImage: "url('/haven.jpg')", // Add Kiwi image
-            backgroundSize: "100% 100%", // Stretch the image to completely fit the box
-            backgroundPosition: "center", // Center the image
-            borderRadius: "8px", // Inner container rounded corners
-            width: "100%", // Fill the available space
-            height: "100%", // Fill the available space
-          }}
-        />
+        <a
+  href="https://www.linkedin.com/company/haven-tech-us/posts/?feedView=all"
+  target="_blank"
+  rel="noopener noreferrer"
+  style={{ display: "block", width: "100%", height: "100%" }}
+>
+  <div
+    style={{
+      backgroundImage: "url('/haven.jpg')",
+      backgroundSize: "100% 100%",
+      backgroundPosition: "center",
+      borderRadius: "8px",
+      width: "100%",
+      height: "100%",
+    }}
+  />
+</a>
       </div>
 
       {/* Project Kiwi */}
@@ -472,7 +558,14 @@ At GM, I built predictive features that used car data to help users make smarter
           margin: "0 auto", // Center horizontally
         }}
       >
-        Kiwi
+        <a
+  href="https://www.tiktok.com/@kiwi___app/video/7119848174780419374"
+  target="_blank"
+  rel="noopener noreferrer"
+  style={{ textDecoration: "none", color: "inherit" }}
+>
+  Kiwi
+</a>
         <div
           style={{
             fontSize: "0.75rem", // Smaller font size for subtext
@@ -514,16 +607,23 @@ At GM, I built predictive features that used car data to help users make smarter
           justifyContent: "center",
         }}
       >
-        <div
-          style={{
-            backgroundImage: "url('/kiwi.jpg')", // Add Kiwi image
-            backgroundSize: "100% 100%", // Stretch the image to completely fit the box
-            backgroundPosition: "center", // Center the image
-            borderRadius: "8px", // Inner container rounded corners
-            width: "100%", // Fill the available space
-            height: "100%", // Fill the available space
-          }}
-        />
+        <a
+  href="https://www.tiktok.com/@kiwi___app/video/7119848174780419374"
+  target="_blank"
+  rel="noopener noreferrer"
+  style={{ display: "block", width: "100%", height: "100%" }}
+>
+  <div
+    style={{
+      backgroundImage: "url('/kiwi.jpg')",
+      backgroundSize: "100% 100%",
+      backgroundPosition: "center",
+      borderRadius: "8px",
+      width: "100%",
+      height: "100%",
+    }}
+  />
+</a>
       </div>
 
     </div>

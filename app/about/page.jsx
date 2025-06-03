@@ -71,16 +71,27 @@ export default function ProjectsPage() {
           padding: "1.5rem",
           boxShadow: "0 4px 24px rgba(0,0,0,0.08)",
           textAlign: "center",
-          fontWeight: 600,
+          fontWeight: 800,
           fontSize: "0.85rem", // Reduced font size
           color: "#515151",
           width: "50%", // Reduce width by 10%
-          height: "30px", // Reduced height to one-third of original
+          height: "50px", // Reduced height to one-third of original
           margin: "0 auto", // Center horizontally
         }}
       >
         Nusaiba Rahman
+              <div
+        style={{
+          fontSize: "0.75rem", // Smaller font size for subtext
+          fontWeight: 400, // Lighter font weight for subtext
+          color: "white", // White color for subtext
+          marginTop: "0.5rem", // Add spacing between title and subtext
+        }}
+      >
+        Berkeley 2020, Data Science - Business Analytics
       </div>
+      </div>
+
       <div
         style={{
           padding: "1.5rem",
@@ -93,8 +104,13 @@ export default function ProjectsPage() {
           margin: "0 auto", // Center horizontally
         }}
       >
-        hello this is some filler text sentences etc let me make it a little longer so it goes to 2 lines in the front end
-      </div></div>
+I thrive at the intersection of tech and branding, and I love working with small teams and freelance clients. I’m drawn to projects that blend thoughtful design with smart systems — and nothing beats the satisfaction of creating real impact. Want to collaborate? 
+<a href="mailto:nusaiba@berkeley.edu" style={{ textDecoration: 'none', color: 'inherit',           fontWeight: 600,
+ }}>Let’s chat! ➡️  Mail 📩   </a>
+<a href="https://www.linkedin.com/in/nusaiba-rahman/" style={{ textDecoration: 'none', color: 'inherit', fontWeight: 600}}> LinkedIn 🌐 </a>      
+
+</div></div>
+                        
                         {/* column 1 */}
 
       <div><div
@@ -105,15 +121,25 @@ export default function ProjectsPage() {
           padding: "1.5rem",
           boxShadow: "0 4px 24px rgba(0,0,0,0.08)",
           textAlign: "center",
-          fontWeight: 600,
+          fontWeight: 800,
           fontSize: "0.85rem", // Reduced font size
           color: "#515151",
           width: "50%", // Reduce width by 10%
-          height: "30px", // Reduced height to one-third of original
+          height: "50px", // Reduced height to one-third of original
           margin: "0 auto", // Center horizontally
         }}
       >
-        Tool Belt
+        My Tool Belt
+                      <div
+        style={{
+          fontSize: "0.75rem", // Smaller font size for subtext
+          fontWeight: 400, // Lighter font weight for subtext
+          color: "white", // White color for subtext
+          marginTop: "0.5rem", // Add spacing between title and subtext
+        }}
+      >
+        Always open to learning more. 
+      </div>
       </div>
       <div
         style={{
@@ -127,7 +153,7 @@ export default function ProjectsPage() {
           margin: "0 auto", // Center horizontally
         }}
       >
-        hello this is some filler text sentences etc let me make it a little longer so it goes to 2 lines in the front end
+        Javascript (React) ★ Bubble ★ Bolt ★ Figma ★ Framer ★ Stripe ★ Jupyter (Python, AI libraries) ★ SQL ★ Adobe Creative (InDesign, Illustrator, Photoshop) ★
       </div></div>
     </div>
   );
