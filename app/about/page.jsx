@@ -20,7 +20,7 @@ export default function ProjectsPage() {
 
   // Updated layout to display 3 columns horizontally
   const containerStyle = isMobile
-    ? { display: "flex", flexDirection: "column", gap: "1rem" } // Maintain vertical layout for mobile screens
+    ? { display: "flex", flexDirection: "column", gap: "5rem" } // Maintain vertical layout for mobile screens
     : { display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "2rem" }; // Updated to 3 columns for non-mobile screens
 
   return (
@@ -86,6 +86,8 @@ export default function ProjectsPage() {
           fontWeight: 400, // Lighter font weight for subtext
           color: "white", // White color for subtext
           marginTop: "0.5rem", // Add spacing between title and subtext
+                    bottomMargin: "1rem", // Add bottom margin for spacing
+
         }}
       >
         Berkeley 2020, Data Science - Business Analytics
@@ -106,7 +108,7 @@ export default function ProjectsPage() {
       >
 I thrive at the intersection of tech and branding, and I love working with small teams and freelance clients. I’m drawn to projects that blend thoughtful design with smart systems — and nothing beats the satisfaction of creating real impact. Want to collaborate? 
 <a href="mailto:nusaiba@berkeley.edu" style={{ textDecoration: 'none', color: 'inherit',           fontWeight: 600,
- }}>Let’s chat! ➡️  Mail 📩   </a>
+ }}>Let’s chat! ➡️  Mail ✉️   </a>
 <a href="https://www.linkedin.com/in/nusaiba-rahman/" style={{ textDecoration: 'none', color: 'inherit', fontWeight: 600}}> LinkedIn 🌐 </a>      
 
 </div></div>
