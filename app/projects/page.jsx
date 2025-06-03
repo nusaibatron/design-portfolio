@@ -1,15 +1,16 @@
 "use client";
+import {isMobile} from 'react-device-detect';
 
 import { useEffect, useState } from "react";
 
 export default function ProjectsPage() {
-  const [isMobile, setIsMobile] = useState(false);
+  // const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
           console.log("Window width:", window.innerWidth); // Log the current window width
 
-      setIsMobile(window.innerWidth <= 900);
+      // setIsMobile(window.innerWidth <= 900);
     };
 
     handleResize(); // Set initial state
