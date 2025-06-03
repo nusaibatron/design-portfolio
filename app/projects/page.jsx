@@ -31,7 +31,7 @@ export default function ProjectsPage() {
       }}
     >
       {/* Project 1 */}
-      <div
+      <div><div
         style={{
           background: "rgba(200, 225, 255, 0.55)",
           backdropFilter: "blur(8px)",
@@ -51,20 +51,48 @@ export default function ProjectsPage() {
       </div>
       <div
         style={{
-          backgroundImage: "url('/intuit.jpg')", // Replace placeholder with actual image
-          backgroundSize: "100% 100%", // Stretch the image to completely fit the box
-          backgroundPosition: "center", // Center the image
-          borderRadius: "12px",
-          boxShadow: "0 4px 24px rgba(0,0,0,0.08)",
+          padding: "1.5rem",
+          textAlign: "left",
+          fontWeight: 300,
+          fontSize: "0.85rem", // Reduced font size
+          color: "white",
+          width: "80%", // Reduce width by 10%
+          height: "30px", // Reduced height to one-third of original
+          margin: "0 auto", // Center horizontally
+        }}
+      >
+        hello this is some filler text sentences etc let me make it a little longer so it goes to 2 lines in the front end
+      </div></div>
+      <div
+        style={{
+          padding: "10px", // Add padding to create space for the blur effect
+          borderRadius: "12px", // Rounded corners
+          backdropFilter: "blur(8px)", // Add blur effect
+          border: "2px solid white", // Add white border
+          boxShadow: "0 4px 24px rgba(0,0,0,0.08)", // Add drop shadow
           width: "90%", // Reduce width of the image box by 10%
           height: "300px", // Set height to better fit the image
           aspectRatio: "16 / 9", // Maintain aspect ratio for better fit
           margin: "0 auto", // Center horizontally
+          display: "flex", // Ensure inner content is centered
+          alignItems: "center",
+          justifyContent: "center",
         }}
-      />
+      >
+        <div
+          style={{
+            backgroundImage: "url('/intuit.jpg')", // Replace placeholder with actual image
+            backgroundSize: "100% 100%", // Stretch the image to completely fit the box
+            backgroundPosition: "center", // Center the image
+            borderRadius: "8px", // Inner container rounded corners
+            width: "100%", // Fill the available space
+            height: "100%", // Fill the available space
+          }}
+        />
+      </div>
 
       {/* Project 2 */}
-      <div
+      <div><div
         style={{
           background: "rgba(200, 225, 255, 0.55)",
           backdropFilter: "blur(8px)",
@@ -74,31 +102,58 @@ export default function ProjectsPage() {
           textAlign: "center",
           fontWeight: 600,
           fontSize: "0.85rem", // Reduced font size
-                    color: "#515151",
-
+          color: "#515151",
           width: "50%", // Reduce width by 10%
           height: "30px", // Reduced height to one-third of original
           margin: "0 auto", // Center horizontally
         }}
       >
-        Versana Finance Status
+        Versana
       </div>
       <div
         style={{
-          backgroundImage: "url('/versana.jpg')", // Replace placeholder with actual image
-          backgroundSize: "100% 100%", // Stretch the image to completely fit the box
-          backgroundPosition: "center", // Center the image
-          borderRadius: "12px",
-          boxShadow: "0 4px 24px rgba(0,0,0,0.08)",
+          padding: "1.5rem",
+          textAlign: "left",
+          fontWeight: 300,
+          fontSize: "0.85rem", // Reduced font size
+          color: "white",
+          width: "80%", // Reduce width by 10%
+          height: "30px", // Reduced height to one-third of original
+          margin: "0 auto", // Center horizontally
+        }}
+      >
+        hello this is some filler text sentences etc let me make it a little longer so it goes to 2 lines in the front end
+      </div></div>
+      <div
+        style={{
+          padding: "10px", // Add padding to create space for the blur effect
+          borderRadius: "12px", // Rounded corners
+          backdropFilter: "blur(8px)", // Add blur effect
+          border: "2px solid white", // Add white border
+          boxShadow: "0 4px 24px rgba(0,0,0,0.08)", // Add drop shadow
           width: "90%", // Reduce width of the image box by 10%
           height: "300px", // Set height to better fit the image
           aspectRatio: "16 / 9", // Maintain aspect ratio for better fit
           margin: "0 auto", // Center horizontally
+          display: "flex", // Ensure inner content is centered
+          alignItems: "center",
+          justifyContent: "center",
         }}
-      />
+      >
+        <div
+          style={{
+            backgroundImage: "url('/versana.jpg')", // Replace placeholder with actual image
+            backgroundSize: "100% 100%", // Stretch the image to completely fit the box
+            backgroundPosition: "center", // Center the image
+            borderRadius: "8px", // Inner container rounded corners
+            width: "100%", // Fill the available space
+            height: "100%", // Fill the available space
+          }}
+        />
+      </div>
 
       {/* Project 3 */}
-      <div
+      <div><div
         style={{
           background: "rgba(200, 225, 255, 0.55)",
           backdropFilter: "blur(8px)",
@@ -118,21 +173,48 @@ export default function ProjectsPage() {
       </div>
       <div
         style={{
-          backgroundImage: "url('/dots.jpg')", // Replace video with image
-          backgroundSize: "100% 100%", // Stretch the image to completely fit the box
-          backgroundPosition: "center", // Center the image
-          borderRadius: "15px",
-          boxShadow: "1 8px 40px rgba(0,0,0,0.08)", // Add drop shadow
-          border: "2px solid rgba(200, 225, 255, 0.55)", // Add border to match Versana
+          padding: "1.5rem",
+          textAlign: "left",
+          fontWeight: 300,
+          fontSize: "0.85rem", // Reduced font size
+          color: "white",
+          width: "80%", // Reduce width by 10%
+          height: "30px", // Reduced height to one-third of original
+          margin: "0 auto", // Center horizontally
+        }}
+      >
+        hello this is some filler text sentences etc let me make it a little longer so it goes to 2 lines in the front end
+      </div></div>
+      <div
+        style={{
+          padding: "10px", // Add padding to create space for the blur effect
+          borderRadius: "12px", // Rounded corners
+          backdropFilter: "blur(8px)", // Add blur effect
+          border: "2px solid white", // Add white border
+          boxShadow: "0 4px 24px rgba(0,0,0,0.08)", // Add drop shadow
           width: "90%", // Reduce width of the image box by 10%
           height: "300px", // Set height to better fit the image
           aspectRatio: "16 / 9", // Maintain aspect ratio for better fit
           margin: "0 auto", // Center horizontally
+          display: "flex", // Ensure inner content is centered
+          alignItems: "center",
+          justifyContent: "center",
         }}
-      />
+      >
+        <div
+          style={{
+            backgroundImage: "url('/dots.jpg')", // Replace video with image
+            backgroundSize: "100% 100%", // Stretch the image to completely fit the box
+            backgroundPosition: "center", // Center the image
+            borderRadius: "8px", // Inner container rounded corners
+            width: "100%", // Fill the available space
+            height: "100%", // Fill the available space
+          }}
+        />
+      </div>
 
       {/* Project 4 */}
-      <div
+      <div><div
         style={{
           background: "rgba(200, 225, 255, 0.55)",
           backdropFilter: "blur(8px)",
@@ -152,17 +234,45 @@ export default function ProjectsPage() {
       </div>
       <div
         style={{
-          backgroundImage: "url('/kiwi.jpg')", // Add Kiwi image
-          backgroundSize: "100% 100%", // Stretch the image to completely fit the box
-          backgroundPosition: "center", // Center the image
-          borderRadius: "12px",
-          boxShadow: "0 4px 24px rgba(0,0,0,0.08)",
+          padding: "1.5rem",
+          textAlign: "left",
+          fontWeight: 300,
+          fontSize: "0.85rem", // Reduced font size
+          color: "white",
+          width: "80%", // Reduce width by 10%
+          height: "30px", // Reduced height to one-third of original
+          margin: "0 auto", // Center horizontally
+        }}
+      >
+        hello this is some filler text sentences etc let me make it a little longer so it goes to 2 lines in the front end
+      </div></div>
+      <div
+        style={{
+          padding: "10px", // Add padding to create space for the blur effect
+          borderRadius: "12px", // Rounded corners
+          backdropFilter: "blur(8px)", // Add blur effect
+          border: "2px solid white", // Add white border
+          boxShadow: "0 4px 24px rgba(0,0,0,0.08)", // Add drop shadow
           width: "90%", // Reduce width of the image box by 10%
           height: "300px", // Set height to better fit the image
           aspectRatio: "10 / 9", // Maintain aspect ratio for better fit
           margin: "0 auto", // Center horizontally
+          display: "flex", // Ensure inner content is centered
+          alignItems: "center",
+          justifyContent: "center",
         }}
-      />
+      >
+        <div
+          style={{
+            backgroundImage: "url('/kiwi.jpg')", // Add Kiwi image
+            backgroundSize: "100% 100%", // Stretch the image to completely fit the box
+            backgroundPosition: "center", // Center the image
+            borderRadius: "8px", // Inner container rounded corners
+            width: "100%", // Fill the available space
+            height: "100%", // Fill the available space
+          }}
+        />
+      </div>
     </div>
   );
 }
