@@ -1,3 +1,4 @@
 export default function ProjectsPage() {
-  return <h1 style={{ padding: "2rem", fontSize: "1.5rem", color: "white" }}>Under construction 👷‍♀️</h1>;
+  return <h1 style={{ padding: "2rem", color: "white", fontWeight: 300,
+          fontSize: "0.85rem"}}>Under construction 👷‍♀️</h1>;
 }

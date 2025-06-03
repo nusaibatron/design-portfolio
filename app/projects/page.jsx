@@ -245,6 +245,8 @@ export default function ProjectsPage() {
         }}
       >
         hello this is some filler text sentences etc let me make it a little longer so it goes to 2 lines in the front end
+                banana hello this is some filler text sentences etc let me make it a little longer so it goes to 2 lines in the front end
+
       </div></div>
       <div
         style={{
