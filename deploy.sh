@@ -4,6 +4,11 @@ set -e
 MESSAGE=${1:-"Deploy update"}
 ROOT_DIR=$(pwd)
 
+echo "Doing some clean up..."
+rm -rf /Users/nusaibarahman/Desktop/design-portfolio/.next
+rm -rf /Users/nusaibarahman/Desktop/design-portfolio/out
+rm -rf /Users/nusaibarahman/Desktop/design-portfolio/.git/index.lock
+
 echo "🏗 Building site..."
 npm run build
 
