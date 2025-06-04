@@ -1,8 +1,22 @@
 "use client";
 
-import {isMobile} from 'react-device-detect';
+import { useEffect, useState } from "react";
 
 export default function ProjectsPage() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 850);
+    };
+
+    handleResize(); // Set initial state
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   // Updated layout to display 3 columns horizontally
   const containerStyle = isMobile

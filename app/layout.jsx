@@ -3,24 +3,22 @@
 import './globals.css';
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import {isMobile} from 'react-device-detect';
-
 import { useEffect, useState } from "react";
 
 export default function RootLayout({ children }) {
   const pathname = usePathname();
   const isHome = pathname === "/";
-  // const [isMobile, setIsMobile] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
-  // useEffect(() => {
-  //   const checkMobile = () => {
-  //     const mobileStatus = window.innerWidth <= 750;
-  //     setIsMobile(mobileStatus);
-  //   };
-  //   checkMobile();
-  //   window.addEventListener("resize", checkMobile);
-  //   return () => window.removeEventListener("resize", checkMobile);
-  // }, []);
+  useEffect(() => {
+    const checkMobile = () => {
+      const mobileStatus = window.innerWidth <= 750;
+      setIsMobile(mobileStatus);
+    };
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
 
   return (
     <html lang="en">
