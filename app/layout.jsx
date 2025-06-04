@@ -13,6 +13,7 @@ export default function RootLayout({ children }) {
   useEffect(() => {
     const checkMobile = () => {
       const mobileStatus = window.innerWidth <= 750;
+      console.log("isMobile:", window.innerWidth); // Log the mobile status
       setIsMobile(mobileStatus);
     };
     checkMobile();

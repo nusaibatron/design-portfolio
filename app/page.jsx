@@ -64,7 +64,7 @@ export default function Home() {
         marginTop: "-1.2rem",
         marginBottom: 0
       }}>
-        Designer in New York City merging tech, taste, and everything inbetween ✨
+        Designer in New York City merging tech, taste, and everything inbetween. ✨
       </p>
     </div>
   );
