@@ -10,7 +10,6 @@ export default function ProjectsPage() {
     const handleResize = () => {
           console.log("Window width:", window.innerWidth); // Log the current window width
 
-      // setIsMobile(window.innerWidth <= 900);
     };
 
     handleResize(); // Set initial state

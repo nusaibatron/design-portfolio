@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 
-export default function ProjectsPage() {
+export default function AboutPage() {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -22,6 +22,8 @@ export default function ProjectsPage() {
   const containerStyle = isMobile
     ? { display: "flex", flexDirection: "column", gap: "5rem", width: "100%" }
     : { display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "2rem" };
+
+  const nameText = isMobile ? "Nusaiba Rahman" : "Nusaiba Rahman.";
 
   return (
     <div
@@ -79,17 +81,17 @@ export default function ProjectsPage() {
             margin: "0 auto",
           }}
         >
-          Nusaiba Rahman
-              <div
-          style={{
-            fontSize: "0.75rem",
-            fontWeight: 400,
-            color: "white",
-            marginTop: "0.5rem",
-          }}
-        >
-          Berkeley 2020, Data Science - Business Analytics
-        </div>
+          {nameText}
+          <div
+            style={{
+              fontSize: "0.75rem",
+              fontWeight: 400,
+              color: "white",
+              marginTop: "0.5rem",
+            }}
+          >
+            Berkeley 2020, Data Science - Business Analytics
+          </div>
         </div>
 
         <div
@@ -103,7 +105,7 @@ export default function ProjectsPage() {
             margin: "0 auto",
           }}
         >
-I thrive at the intersection of tech and branding, and I love working with small teams and freelance clients. I’m drawn to projects that blend thoughtful design with smart systems — and nothing beats the satisfaction of creating real impact. Want to collaborate? 
+I thrive at the intersection of tech and branding, and working freelance with passionate teams. I’m drawn to projects that blend impactful design with smart software. Nothing beats the satisfaction of creating real impact. Want to collaborate? 
 <a href="mailto:nusaiba@berkeley.edu" style={{ textDecoration: 'none', color: 'inherit',           fontWeight: 600,
  }}>Let’s chat! ➡️  Mail ✉️   </a>
 <a href="https://www.linkedin.com/in/nusaiba-rahman/" style={{ textDecoration: 'none', color: 'inherit', fontWeight: 600}}> LinkedIn 🌐 </a>      
