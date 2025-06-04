@@ -1,13 +1,15 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import {isMobile} from 'react-device-detect';
+
 
 export default function AboutPage() {
-  const [isMobile, setIsMobile] = useState(false);
+  // const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 850);
+      // setIsMobile(window.innerWidth <= 850);
     };
 
     handleResize(); // Set initial state
@@ -90,7 +92,7 @@ export default function AboutPage() {
               marginTop: "0.5rem",
             }}
           >
-            Berkeley 2020, Data Science - Business Analytics
+            UC Berkeley 2020, Data Science - Business Analytics
           </div>
         </div>
 
@@ -140,7 +142,8 @@ I thrive at the intersection of tech and branding, and working freelance with pa
             marginTop: "0.5rem",
           }}
         >
-          Always open to learning more.
+          And I'm always open to learning more.
+
         </div>
         </div>
         <div
@@ -154,7 +157,7 @@ I thrive at the intersection of tech and branding, and working freelance with pa
             margin: "0 auto",
           }}
         >
-        Javascript (React) ★ Bubble ★ Bolt ★ Figma ★ Framer ★ Stripe ★ Jupyter (Python, AI libraries) ★ SQL ★ Adobe Creative (InDesign, Illustrator, Photoshop) ★
+        Javascript (React) ★ Bubble ★ Bolt ★ Figma ★ Framer ★ Stripe ★ Jupyter (Python, AI libraries) ★ SQL ★ Adobe Creative (InDesign, Illustrator, Photoshop) ★ Google Analytics ★ Braze
         </div>
       </div>
     </div>
