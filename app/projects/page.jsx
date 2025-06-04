@@ -4,22 +4,6 @@ import {isMobile} from 'react-device-detect';
 import { useEffect, useState } from "react";
 
 export default function ProjectsPage() {
-  // const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const handleResize = () => {
-          console.log("Window width:", window.innerWidth); // Log the current window width
-
-      // setIsMobile(window.innerWidth <= 900);
-    };
-
-    handleResize(); // Set initial state
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
 
   const containerStyle = isMobile
     ? { display: "flex", flexDirection: "column", gap: "2rem" }
